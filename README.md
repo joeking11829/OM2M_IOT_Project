@@ -18,8 +18,9 @@ cd docker/om2m_one
 ./src/start_om2m.sh
 ```
 
-### Open M2M WebUI
-in-cse: http://127.0.0.1:8080/webpage/
-mn-cse: http://127.0.0.1:8282/webpage/
-node-red: http://127.0.0.1:1880/
+### OM2M & Node-RED WebUI
+
+- in-cse: http://127.0.0.1:8080/webpage/
+- mn-cse: http://127.0.0.1:8282/webpage/
+- node-red: http://127.0.0.1:1880/
 
