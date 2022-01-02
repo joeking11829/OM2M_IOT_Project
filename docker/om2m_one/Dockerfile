@@ -47,12 +47,17 @@ RUN cp -r org.eclipse.om2m/org.eclipse.om2m.site.mn-cse/target/products/mn-cse/l
 RUN chmod +x ./om2m/in-cse/start.sh && chmod +x ./om2m/mn-cse/start.sh
 
 # install npm
-RUN apt-get install -y tmux npm
+RUN apt-get install -y tmux npm tree
 
 # install Node-RED
 RUN npm install --global node-red
-RUN npm link node-red-contrib-ide-iot
-RUN npm install node-red-contrib-ide-iot --global
+
+# install OM2M One Node-RED plugin
+RUN mkdir -p ~/.node-red && cd ~/.node-red && \
+    git clone https://github.com/IamSkyBlue/contrib-oM2M_backup.git && \
+    npm install
+RUN mkdir -p ~/.node-red/node_modules/ && \
+    mv ~/.node-red/contrib-oM2M_backup ~/.node-red/node_modules/.
 
 
 RUN rm -rf /var/lib/apt/lists/*
