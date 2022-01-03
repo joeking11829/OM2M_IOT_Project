@@ -1,0 +1,747 @@
+[
+    {
+        "id": "d761b4369cdf1108",
+        "type": "tab",
+        "label": "Device_IP_Flow",
+        "disabled": false,
+        "info": "用於建立 Device IP 註冊機制",
+        "env": []
+    },
+    {
+        "id": "a2dd9f8d4e9c3de2",
+        "type": "inject",
+        "z": "d761b4369cdf1108",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 80,
+        "wires": [
+            [
+                "fc5996aeb49e46ef"
+            ]
+        ]
+    },
+    {
+        "id": "fc5996aeb49e46ef",
+        "type": "oM2M-ONE-Application",
+        "z": "d761b4369cdf1108",
+        "xN_CSE": "7744e0646ab474b6",
+        "NM": "bee74264b68fada6",
+        "obixType": "",
+        "obixCategory": "",
+        "obixLocation": "",
+        "obiNMnnounce": false,
+        "x": 380,
+        "y": 80,
+        "wires": [
+            [
+                "67e805e468e1991e"
+            ]
+        ]
+    },
+    {
+        "id": "67e805e468e1991e",
+        "type": "http request",
+        "z": "d761b4369cdf1108",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 590,
+        "y": 80,
+        "wires": [
+            [
+                "059bcc5ee9672989"
+            ]
+        ]
+    },
+    {
+        "id": "059bcc5ee9672989",
+        "type": "debug",
+        "z": "d761b4369cdf1108",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "bd54f350285c6ab6",
+        "type": "inject",
+        "z": "d761b4369cdf1108",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 160,
+        "wires": [
+            [
+                "e70ebdda2bb64370"
+            ]
+        ]
+    },
+    {
+        "id": "bbb106bd688a3a88",
+        "type": "http request",
+        "z": "d761b4369cdf1108",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 590,
+        "y": 160,
+        "wires": [
+            [
+                "683d128cfd4dd8d7"
+            ]
+        ]
+    },
+    {
+        "id": "683d128cfd4dd8d7",
+        "type": "debug",
+        "z": "d761b4369cdf1108",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "e70ebdda2bb64370",
+        "type": "oM2M-ONE-Data-Container",
+        "z": "d761b4369cdf1108",
+        "xN_CSE": "7744e0646ab474b6",
+        "NM": "bee74264b68fada6",
+        "maxNrOfInstances": "10",
+        "obiNMnnounce": false,
+        "x": 370,
+        "y": 160,
+        "wires": [
+            [
+                "bbb106bd688a3a88"
+            ]
+        ]
+    },
+    {
+        "id": "e95bb8ca823d2f2d",
+        "type": "inject",
+        "z": "d761b4369cdf1108",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 240,
+        "wires": [
+            [
+                "865e81cfb2f105e2"
+            ]
+        ]
+    },
+    {
+        "id": "272da3b06b347875",
+        "type": "http request",
+        "z": "d761b4369cdf1108",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:8282/~/mn-cse/mn-name/DEVICE_IP_APP/DATA",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 590,
+        "y": 240,
+        "wires": [
+            [
+                "a8e0f485cc9a7a8c"
+            ]
+        ]
+    },
+    {
+        "id": "a8e0f485cc9a7a8c",
+        "type": "debug",
+        "z": "d761b4369cdf1108",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 790,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "865e81cfb2f105e2",
+        "type": "function",
+        "z": "d761b4369cdf1108",
+        "name": "Create_DeviceIP_TestData",
+        "func": "msg.headers = {\n        \"X-M2M-Origin\": \"admin:admin\",\n        \"Content-type\" : \"application/xml;ty=4\"\n};\n\n// Set Test IP\nvar IP = '127.0.0.1';\n\nmsg.payload = \"\\\n<m2m:cin xmlns:m2m=\\\"http://www.onem2m.org/xml/protocols\\\">\\\n    <cnf>message</cnf>\\\n    <con>\\\n      &lt;obj&gt;\\\n        &lt;str name=&quot;appId&quot; val=&quot;DEVICE_IP_APP&quot;/&gt;\\\n        &lt;int name=&quot;Device_IP&quot; val=&quot;\" + IP + \"&quot;/&gt;\\\n      &lt;/obj&gt;\\\n    </con>\\\n</m2m:cin>\";\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 240,
+        "wires": [
+            [
+                "272da3b06b347875"
+            ]
+        ]
+    },
+    {
+        "id": "2d69dd748d161909",
+        "type": "inject",
+        "z": "d761b4369cdf1108",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 500,
+        "wires": [
+            [
+                "4f3c763e564f0a52"
+            ]
+        ]
+    },
+    {
+        "id": "4f3c763e564f0a52",
+        "type": "oM2M-ONE-Subscription",
+        "z": "d761b4369cdf1108",
+        "xN_CSE": "7744e0646ab474b6",
+        "NM": "bee74264b68fada6",
+        "contactPath": "http://localhost:1880/notification",
+        "CNT": "DATA",
+        "filterType": "",
+        "filterCriteria": "content",
+        "x": 380,
+        "y": 500,
+        "wires": [
+            [
+                "cbbaf801e7227fd2"
+            ]
+        ]
+    },
+    {
+        "id": "cbbaf801e7227fd2",
+        "type": "http request",
+        "z": "d761b4369cdf1108",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 590,
+        "y": 500,
+        "wires": [
+            [
+                "7e0c9d872e0f91f6"
+            ]
+        ]
+    },
+    {
+        "id": "7e0c9d872e0f91f6",
+        "type": "debug",
+        "z": "d761b4369cdf1108",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 790,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "3d3263f562cf663c",
+        "type": "http in",
+        "z": "d761b4369cdf1108",
+        "name": "Listen to HTTP POST Notifications",
+        "url": "/notification",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 240,
+        "y": 580,
+        "wires": [
+            [
+                "bf11ca06ee9111cd",
+                "0e14dfe01e05f3d4"
+            ]
+        ]
+    },
+    {
+        "id": "0e14dfe01e05f3d4",
+        "type": "http response",
+        "z": "d761b4369cdf1108",
+        "name": "Notification Reponse",
+        "statusCode": "",
+        "headers": {},
+        "x": 370,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "bf11ca06ee9111cd",
+        "type": "xml",
+        "z": "d761b4369cdf1108",
+        "name": "",
+        "property": "payload",
+        "attr": "",
+        "chr": "",
+        "x": 500,
+        "y": 580,
+        "wires": [
+            [
+                "1f4777bd80b52a40"
+            ]
+        ]
+    },
+    {
+        "id": "1f4777bd80b52a40",
+        "type": "function",
+        "z": "d761b4369cdf1108",
+        "name": "Extract_Data_from_XML",
+        "func": "var notification = msg.payload['m2m:sgn'];\n\nvar nev = notification['nev'][0];\n\nvar rep = nev['rep'][0];\n\nvar con = rep['con'][0];\n\nmsg.payload = con;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 580,
+        "wires": [
+            [
+                "9ae7f769951a2f2e",
+                "a97cbf6ebaa7955a"
+            ]
+        ]
+    },
+    {
+        "id": "9ae7f769951a2f2e",
+        "type": "debug",
+        "z": "d761b4369cdf1108",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 970,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "a97cbf6ebaa7955a",
+        "type": "file",
+        "z": "d761b4369cdf1108",
+        "name": "",
+        "filename": "/root/src/data/file_database/device_ip.xml",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1060,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2b7eae2a8524706a",
+        "type": "http in",
+        "z": "d761b4369cdf1108",
+        "name": "GET Device IP",
+        "url": "/device_ip",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 180,
+        "y": 800,
+        "wires": [
+            [
+                "4d22a8dbc0152208"
+            ]
+        ]
+    },
+    {
+        "id": "4d22a8dbc0152208",
+        "type": "file in",
+        "z": "d761b4369cdf1108",
+        "name": "",
+        "filename": "/root/src/data/file_database/device_ip.xml",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 460,
+        "y": 800,
+        "wires": [
+            [
+                "e54bde1ea79b0ac6"
+            ]
+        ]
+    },
+    {
+        "id": "e54bde1ea79b0ac6",
+        "type": "xml",
+        "z": "d761b4369cdf1108",
+        "name": "",
+        "property": "payload",
+        "attr": "",
+        "chr": "",
+        "x": 590,
+        "y": 880,
+        "wires": [
+            [
+                "1e8d99bbafdd1ff8"
+            ]
+        ]
+    },
+    {
+        "id": "866231fd7343877a",
+        "type": "http response",
+        "z": "d761b4369cdf1108",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1110,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "1666415cc6aad835",
+        "type": "http in",
+        "z": "d761b4369cdf1108",
+        "name": "Set Device IP",
+        "url": "/device_ip",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 150,
+        "y": 340,
+        "wires": [
+            [
+                "39e490ad02349eeb",
+                "fe06df2b14ca6492"
+            ]
+        ]
+    },
+    {
+        "id": "39e490ad02349eeb",
+        "type": "http response",
+        "z": "d761b4369cdf1108",
+        "name": "Response",
+        "statusCode": "",
+        "headers": {},
+        "x": 340,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "fe06df2b14ca6492",
+        "type": "function",
+        "z": "d761b4369cdf1108",
+        "name": "Create_DeviceIP_Data",
+        "func": "msg.headers = {\n        \"X-M2M-Origin\": \"admin:admin\",\n        \"Content-type\" : \"application/xml;ty=4\"\n};\n\n\nmsg.payload = \"\\\n<m2m:cin xmlns:m2m=\\\"http://www.onem2m.org/xml/protocols\\\">\\\n    <cnf>message</cnf>\\\n    <con>\\\n      &lt;obj&gt;\\\n        &lt;str name=&quot;appId&quot; val=&quot;DEVICE_IP_APP&quot;/&gt;\\\n        &lt;int name=&quot;Device_IP&quot; val=&quot;\" + msg.payload.device_ip + \"&quot;/&gt;\\\n      &lt;/obj&gt;\\\n    </con>\\\n</m2m:cin>\";\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 340,
+        "wires": [
+            [
+                "03cb7be4607d7b6b"
+            ]
+        ]
+    },
+    {
+        "id": "03cb7be4607d7b6b",
+        "type": "http request",
+        "z": "d761b4369cdf1108",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:8282/~/mn-cse/mn-name/DEVICE_IP_APP/DATA",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 650,
+        "y": 340,
+        "wires": [
+            [
+                "20081ba25bca69a2"
+            ]
+        ]
+    },
+    {
+        "id": "20081ba25bca69a2",
+        "type": "debug",
+        "z": "d761b4369cdf1108",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 850,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "f2113965c3462d16",
+        "type": "http request",
+        "z": "d761b4369cdf1108",
+        "name": "Post to /device_ip",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:1880/device_ip",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 770,
+        "y": 980,
+        "wires": [
+            [
+                "197d4e10d881818d"
+            ]
+        ]
+    },
+    {
+        "id": "1054024a6dc4972d",
+        "type": "function",
+        "z": "d761b4369cdf1108",
+        "name": "Parse XML JSON",
+        "func": "var data = JSON.parse(msg.payload);\nvar object1 = data.obj;\nvar integer1 = object1.int;\n\nvar tres = integer1[0];\nvar tres_$ = tres.$;\nvar device_ip = tres_$.val;\n\n\nmsg.payload = {\n            \"device_ip\":device_ip\n            };\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 800,
+        "wires": [
+            [
+                "7a1c0d813edcafb3",
+                "866231fd7343877a"
+            ]
+        ]
+    },
+    {
+        "id": "7a1c0d813edcafb3",
+        "type": "debug",
+        "z": "d761b4369cdf1108",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1130,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "1e8d99bbafdd1ff8",
+        "type": "json",
+        "z": "d761b4369cdf1108",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": true,
+        "x": 730,
+        "y": 880,
+        "wires": [
+            [
+                "1054024a6dc4972d"
+            ]
+        ]
+    },
+    {
+        "id": "8bec2399caf726bc",
+        "type": "inject",
+        "z": "d761b4369cdf1108",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 180,
+        "y": 980,
+        "wires": [
+            [
+                "12820acafde08e44"
+            ]
+        ]
+    },
+    {
+        "id": "12820acafde08e44",
+        "type": "function",
+        "z": "d761b4369cdf1108",
+        "name": "Test_for_Post_Device_IP",
+        "func": "// set json header\nmsg.headers = {    \n    \"Content-Type\": \"application/json\"\n    };\n    \nmsg.payload = {\n    'device_ip': '10.42.0.200'\n};\n    \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 980,
+        "wires": [
+            [
+                "f2113965c3462d16"
+            ]
+        ]
+    },
+    {
+        "id": "197d4e10d881818d",
+        "type": "debug",
+        "z": "d761b4369cdf1108",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1070,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "7744e0646ab474b6",
+        "type": "xN_CSE",
+        "sclId": "mn-cse",
+        "host": "localhost",
+        "port": "8282",
+        "baseUrl": "~"
+    },
+    {
+        "id": "bee74264b68fada6",
+        "type": "NM",
+        "appId": "DEVICE_IP_APP",
+        "contactUrl": "localhost:1880"
+    }
+]

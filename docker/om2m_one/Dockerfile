@@ -33,8 +33,10 @@ RUN apt-get install -y maven
 
 WORKDIR /root
 
-# install OM2M
+# install OM2M 1.0.0
 RUN git clone https://git.eclipse.org/r/om2m/org.eclipse.om2m
+RUN cd ./org.eclipse.om2m && git checkout 1.0.0
+# build OM2M
 RUN cd ./org.eclipse.om2m && mvn clean install -DskipTests=true
 
 WORKDIR /root
@@ -47,10 +49,10 @@ RUN cp -r org.eclipse.om2m/org.eclipse.om2m.site.mn-cse/target/products/mn-cse/l
 RUN chmod +x ./om2m/in-cse/start.sh && chmod +x ./om2m/mn-cse/start.sh
 
 # install npm
-RUN apt-get install -y tmux npm tree
+RUN apt-get install -y nodejs npm tree tmux
 
 # install Node-RED
-RUN npm install --global node-red
+RUN npm install -g --unsafe-perm node-red
 
 # install OM2M One Node-RED plugin
 RUN mkdir -p ~/.node-red && cd ~/.node-red && \
