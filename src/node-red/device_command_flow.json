@@ -1,6 +1,6 @@
 [
     {
-        "id": "b2f022341a33b8b3",
+        "id": "ce4f2f298caa7612",
         "type": "tab",
         "label": "Device_Command_Flow",
         "disabled": false,
@@ -8,9 +8,9 @@
         "env": []
     },
     {
-        "id": "1a8c2486ed42e0ee",
+        "id": "b7709f676467ad56",
         "type": "inject",
-        "z": "b2f022341a33b8b3",
+        "z": "ce4f2f298caa7612",
         "name": "",
         "props": [
             {
@@ -32,16 +32,16 @@
         "y": 60,
         "wires": [
             [
-                "add12da7ded07a48"
+                "81dfe0d2dfd4d965"
             ]
         ]
     },
     {
-        "id": "add12da7ded07a48",
+        "id": "81dfe0d2dfd4d965",
         "type": "oM2M-ONE-Application",
-        "z": "b2f022341a33b8b3",
+        "z": "ce4f2f298caa7612",
         "xN_CSE": "7744e0646ab474b6",
-        "NM": "9fbb2a1664eb479b",
+        "NM": "52f6cac2ced8b949",
         "obixType": "",
         "obixCategory": "",
         "obixLocation": "",
@@ -50,14 +50,14 @@
         "y": 60,
         "wires": [
             [
-                "61b06375c51a18bd"
+                "a2698a3572b7b128"
             ]
         ]
     },
     {
-        "id": "61b06375c51a18bd",
+        "id": "a2698a3572b7b128",
         "type": "http request",
-        "z": "b2f022341a33b8b3",
+        "z": "ce4f2f298caa7612",
         "name": "",
         "method": "POST",
         "ret": "txt",
@@ -72,14 +72,14 @@
         "y": 60,
         "wires": [
             [
-                "f8604f72b1a2a2eb"
+                "c03cc73f24f347a4"
             ]
         ]
     },
     {
-        "id": "f8604f72b1a2a2eb",
+        "id": "c03cc73f24f347a4",
         "type": "debug",
-        "z": "b2f022341a33b8b3",
+        "z": "ce4f2f298caa7612",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -93,9 +93,9 @@
         "wires": []
     },
     {
-        "id": "87e04dff7e928999",
+        "id": "7014e1cb32f0a50a",
         "type": "inject",
-        "z": "b2f022341a33b8b3",
+        "z": "ce4f2f298caa7612",
         "name": "",
         "props": [
             {
@@ -117,14 +117,14 @@
         "y": 140,
         "wires": [
             [
-                "e7c77730ca1bdee2"
+                "2320ce9bbe8bb8a4"
             ]
         ]
     },
     {
-        "id": "f43883a499ffadf8",
+        "id": "299ccdf596e69fab",
         "type": "http request",
-        "z": "b2f022341a33b8b3",
+        "z": "ce4f2f298caa7612",
         "name": "",
         "method": "POST",
         "ret": "txt",
@@ -139,14 +139,14 @@
         "y": 140,
         "wires": [
             [
-                "3461b9047d1ec75c"
+                "8ab81ad3086ebeee"
             ]
         ]
     },
     {
-        "id": "3461b9047d1ec75c",
+        "id": "8ab81ad3086ebeee",
         "type": "debug",
-        "z": "b2f022341a33b8b3",
+        "z": "ce4f2f298caa7612",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -160,25 +160,25 @@
         "wires": []
     },
     {
-        "id": "e7c77730ca1bdee2",
+        "id": "2320ce9bbe8bb8a4",
         "type": "oM2M-ONE-Data-Container",
-        "z": "b2f022341a33b8b3",
+        "z": "ce4f2f298caa7612",
         "xN_CSE": "7744e0646ab474b6",
-        "NM": "9fbb2a1664eb479b",
+        "NM": "52f6cac2ced8b949",
         "maxNrOfInstances": "100",
         "obiNMnnounce": false,
         "x": 410,
         "y": 140,
         "wires": [
             [
-                "f43883a499ffadf8"
+                "299ccdf596e69fab"
             ]
         ]
     },
     {
-        "id": "da666f9e4d16fed8",
+        "id": "6b4aead4d61b3c27",
         "type": "inject",
-        "z": "b2f022341a33b8b3",
+        "z": "ce4f2f298caa7612",
         "name": "",
         "props": [
             {
@@ -200,14 +200,14 @@
         "y": 220,
         "wires": [
             [
-                "98528b76dce812f0"
+                "4e1e4facaed1ca95"
             ]
         ]
     },
     {
-        "id": "367b11029d6be6b6",
+        "id": "aa3588d36f65e079",
         "type": "http request",
-        "z": "b2f022341a33b8b3",
+        "z": "ce4f2f298caa7612",
         "name": "",
         "method": "POST",
         "ret": "txt",
@@ -222,14 +222,14 @@
         "y": 220,
         "wires": [
             [
-                "c04d8c82d25cfd9d"
+                "13d94a2149e8df99"
             ]
         ]
     },
     {
-        "id": "c04d8c82d25cfd9d",
+        "id": "13d94a2149e8df99",
         "type": "debug",
-        "z": "b2f022341a33b8b3",
+        "z": "ce4f2f298caa7612",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -243,9 +243,9 @@
         "wires": []
     },
     {
-        "id": "98528b76dce812f0",
+        "id": "4e1e4facaed1ca95",
         "type": "function",
-        "z": "b2f022341a33b8b3",
+        "z": "ce4f2f298caa7612",
         "name": "Create_DeviceCommand_TestData",
         "func": "msg.headers = {\n        \"X-M2M-Origin\": \"admin:admin\",\n        \"Content-type\" : \"application/xml;ty=4\"\n};\n\n// Set Test Data\nvar POWER_MODE = 'on';\nvar DARK_THRESH = 30;\nvar LIGHT_THRESH = 70;\n\nmsg.payload = \"\\\n<m2m:cin xmlns:m2m=\\\"http://www.onem2m.org/xml/protocols\\\">\\\n    <cnf>message</cnf>\\\n    <con>\\\n      &lt;obj&gt;\\\n        &lt;str name=&quot;appId&quot; val=&quot;DEVICE_COMMAND_APP&quot;/&gt;\\\n        &lt;int name=&quot;POWER_MODE&quot; val=&quot;\" + POWER_MODE + \"&quot;/&gt;\\\n        &lt;int name=&quot;DARK_THRESH&quot; val=&quot;\" + DARK_THRESH + \"&quot;/&gt;\\\n        &lt;int name=&quot;LIGHT_THRESH&quot; val=&quot;\" + LIGHT_THRESH + \"&quot;/&gt;\\\n      &lt;/obj&gt;\\\n    </con>\\\n</m2m:cin>\";\n\n\nreturn msg;",
         "outputs": 1,
@@ -257,14 +257,14 @@
         "y": 220,
         "wires": [
             [
-                "367b11029d6be6b6"
+                "aa3588d36f65e079"
             ]
         ]
     },
     {
-        "id": "cf6c8194f2d25ed0",
+        "id": "8a342c0ee08103d2",
         "type": "inject",
-        "z": "b2f022341a33b8b3",
+        "z": "ce4f2f298caa7612",
         "name": "",
         "props": [
             {
@@ -286,16 +286,16 @@
         "y": 480,
         "wires": [
             [
-                "17fa4666147cb6ec"
+                "8df42ead6ea26ddc"
             ]
         ]
     },
     {
-        "id": "17fa4666147cb6ec",
+        "id": "8df42ead6ea26ddc",
         "type": "oM2M-ONE-Subscription",
-        "z": "b2f022341a33b8b3",
+        "z": "ce4f2f298caa7612",
         "xN_CSE": "7744e0646ab474b6",
-        "NM": "9fbb2a1664eb479b",
+        "NM": "52f6cac2ced8b949",
         "contactPath": "http://localhost:1880/notification_device_command",
         "CNT": "DATA",
         "filterType": "",
@@ -304,14 +304,14 @@
         "y": 480,
         "wires": [
             [
-                "2eb630d2de7fce09"
+                "38eae649e8402df2"
             ]
         ]
     },
     {
-        "id": "2eb630d2de7fce09",
+        "id": "38eae649e8402df2",
         "type": "http request",
-        "z": "b2f022341a33b8b3",
+        "z": "ce4f2f298caa7612",
         "name": "",
         "method": "POST",
         "ret": "txt",
@@ -326,14 +326,14 @@
         "y": 480,
         "wires": [
             [
-                "6d51677ccb7ab470"
+                "152a03cae0aa83db"
             ]
         ]
     },
     {
-        "id": "6d51677ccb7ab470",
+        "id": "152a03cae0aa83db",
         "type": "debug",
-        "z": "b2f022341a33b8b3",
+        "z": "ce4f2f298caa7612",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -347,9 +347,9 @@
         "wires": []
     },
     {
-        "id": "dd856d43f20e996a",
+        "id": "8de3cc9d9a5ca45d",
         "type": "http in",
-        "z": "b2f022341a33b8b3",
+        "z": "ce4f2f298caa7612",
         "name": "Listen to HTTP POST Notifications of Device Command",
         "url": "/notification_device_command",
         "method": "post",
@@ -359,26 +359,27 @@
         "y": 560,
         "wires": [
             [
-                "4ffbc1e718d6c689",
-                "3373907f22799782"
+                "ef476df20f86fa8c",
+                "0ca18687bdc7c4c5",
+                "225b6a096001029b"
             ]
         ]
     },
     {
-        "id": "3373907f22799782",
+        "id": "0ca18687bdc7c4c5",
         "type": "http response",
-        "z": "b2f022341a33b8b3",
+        "z": "ce4f2f298caa7612",
         "name": "Notification Device Command Reponse",
         "statusCode": "",
         "headers": {},
-        "x": 320,
-        "y": 660,
+        "x": 240,
+        "y": 700,
         "wires": []
     },
     {
-        "id": "4ffbc1e718d6c689",
+        "id": "ef476df20f86fa8c",
         "type": "xml",
-        "z": "b2f022341a33b8b3",
+        "z": "ce4f2f298caa7612",
         "name": "",
         "property": "payload",
         "attr": "",
@@ -387,14 +388,14 @@
         "y": 560,
         "wires": [
             [
-                "fa243bc12f1d847a"
+                "703ff774e0e292b1"
             ]
         ]
     },
     {
-        "id": "fa243bc12f1d847a",
+        "id": "703ff774e0e292b1",
         "type": "function",
-        "z": "b2f022341a33b8b3",
+        "z": "ce4f2f298caa7612",
         "name": "Extract_Data_from_XML",
         "func": "var notification = msg.payload['m2m:sgn'];\n\nvar nev = notification['nev'][0];\n\nvar rep = nev['rep'][0];\n\nvar con = rep['con'][0];\n\nmsg.payload = con;\n\nreturn msg;",
         "outputs": 1,
@@ -406,16 +407,16 @@
         "y": 640,
         "wires": [
             [
-                "c3d4cc78769dcdf7",
-                "111bbc454a5bcfa7",
-                "0bbbb97f27ae5591"
+                "269d6c3f6a0d76cd",
+                "d102679114b1fcf7",
+                "20e5067a16e8d3f5"
             ]
         ]
     },
     {
-        "id": "c3d4cc78769dcdf7",
+        "id": "269d6c3f6a0d76cd",
         "type": "debug",
-        "z": "b2f022341a33b8b3",
+        "z": "ce4f2f298caa7612",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -430,9 +431,9 @@
         "wires": []
     },
     {
-        "id": "111bbc454a5bcfa7",
+        "id": "d102679114b1fcf7",
         "type": "file",
-        "z": "b2f022341a33b8b3",
+        "z": "ce4f2f298caa7612",
         "name": "",
         "filename": "/root/src/data/file_database/device_command.xml",
         "appendNewline": true,
@@ -446,26 +447,26 @@
         ]
     },
     {
-        "id": "f05f1c4b3e0694bb",
+        "id": "368b0c5214f95106",
         "type": "http in",
-        "z": "b2f022341a33b8b3",
+        "z": "ce4f2f298caa7612",
         "name": "GET Device Last Command",
         "url": "/device_command",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 220,
-        "y": 1120,
+        "x": 240,
+        "y": 1520,
         "wires": [
             [
-                "e4aa167a212b48d2"
+                "f990395f52ea259b"
             ]
         ]
     },
     {
-        "id": "e4aa167a212b48d2",
+        "id": "f990395f52ea259b",
         "type": "file in",
-        "z": "b2f022341a33b8b3",
+        "z": "ce4f2f298caa7612",
         "name": "",
         "filename": "/root/src/data/file_database/device_command.xml",
         "format": "utf8",
@@ -473,45 +474,45 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 590,
-        "y": 1120,
+        "x": 610,
+        "y": 1520,
         "wires": [
             [
-                "95a8b8c536663670"
+                "3dd25d48c826f406"
             ]
         ]
     },
     {
-        "id": "95a8b8c536663670",
+        "id": "3dd25d48c826f406",
         "type": "xml",
-        "z": "b2f022341a33b8b3",
+        "z": "ce4f2f298caa7612",
         "name": "",
         "property": "payload",
         "attr": "",
         "chr": "",
-        "x": 690,
-        "y": 1200,
+        "x": 710,
+        "y": 1600,
         "wires": [
             [
-                "b4159992f29961c6"
+                "cd2959c925a8e99d"
             ]
         ]
     },
     {
-        "id": "11c574af70e263da",
+        "id": "f9d9b3f6ebfe3724",
         "type": "http response",
-        "z": "b2f022341a33b8b3",
+        "z": "ce4f2f298caa7612",
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 1210,
-        "y": 1200,
+        "x": 1230,
+        "y": 1600,
         "wires": []
     },
     {
-        "id": "0706c644578615e2",
+        "id": "034b09a366269485",
         "type": "http in",
-        "z": "b2f022341a33b8b3",
+        "z": "ce4f2f298caa7612",
         "name": "Post Device Command",
         "url": "/device_command",
         "method": "post",
@@ -521,15 +522,15 @@
         "y": 320,
         "wires": [
             [
-                "c33fb88b3d713299",
-                "cb25b92cc8e6f6df"
+                "7d57c41db8f3c3b6",
+                "96690e2782e92965"
             ]
         ]
     },
     {
-        "id": "c33fb88b3d713299",
+        "id": "7d57c41db8f3c3b6",
         "type": "http response",
-        "z": "b2f022341a33b8b3",
+        "z": "ce4f2f298caa7612",
         "name": "Response",
         "statusCode": "",
         "headers": {},
@@ -538,9 +539,9 @@
         "wires": []
     },
     {
-        "id": "cb25b92cc8e6f6df",
+        "id": "96690e2782e92965",
         "type": "function",
-        "z": "b2f022341a33b8b3",
+        "z": "ce4f2f298caa7612",
         "name": "Create_DeviceCommand_Data",
         "func": "msg.headers = {\n        \"X-M2M-Origin\": \"admin:admin\",\n        \"Content-type\" : \"application/xml;ty=4\"\n};\n\n\nmsg.payload = \"\\\n<m2m:cin xmlns:m2m=\\\"http://www.onem2m.org/xml/protocols\\\">\\\n    <cnf>message</cnf>\\\n    <con>\\\n      &lt;obj&gt;\\\n        &lt;str name=&quot;appId&quot; val=&quot;DEVICE_COMMAND_APP&quot;/&gt;\\\n        &lt;int name=&quot;POWER_MODE&quot; val=&quot;\" + msg.payload.power_mode + \"&quot;/&gt;\\\n        &lt;int name=&quot;DARK_THRESH&quot; val=&quot;\" + msg.payload.dark_thresh + \"&quot;/&gt;\\\n        &lt;int name=&quot;LIGHT_THRESH&quot; val=&quot;\" + msg.payload.light_thresh + \"&quot;/&gt;\\\n      &lt;/obj&gt;\\\n    </con>\\\n</m2m:cin>\";\n\n\nreturn msg;",
         "outputs": 1,
@@ -552,14 +553,14 @@
         "y": 320,
         "wires": [
             [
-                "9c477b91c000b532"
+                "9de6f65c959c6d08"
             ]
         ]
     },
     {
-        "id": "9c477b91c000b532",
+        "id": "9de6f65c959c6d08",
         "type": "http request",
-        "z": "b2f022341a33b8b3",
+        "z": "ce4f2f298caa7612",
         "name": "",
         "method": "POST",
         "ret": "txt",
@@ -574,14 +575,14 @@
         "y": 320,
         "wires": [
             [
-                "8ae35b27c01b2e0d"
+                "354bd2f6ed91970e"
             ]
         ]
     },
     {
-        "id": "8ae35b27c01b2e0d",
+        "id": "354bd2f6ed91970e",
         "type": "debug",
-        "z": "b2f022341a33b8b3",
+        "z": "ce4f2f298caa7612",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -595,9 +596,9 @@
         "wires": []
     },
     {
-        "id": "7318dbaaa30d07b1",
+        "id": "bbef905173e8d3a9",
         "type": "http request",
-        "z": "b2f022341a33b8b3",
+        "z": "ce4f2f298caa7612",
         "name": "Post to /device_command",
         "method": "POST",
         "ret": "obj",
@@ -608,18 +609,18 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 790,
-        "y": 980,
+        "x": 810,
+        "y": 1380,
         "wires": [
             [
-                "8e0bcd51820eb46a"
+                "91dc40600b43be50"
             ]
         ]
     },
     {
-        "id": "1bc31ff2f1999a13",
+        "id": "cf33fb8145461cbe",
         "type": "function",
-        "z": "b2f022341a33b8b3",
+        "z": "ce4f2f298caa7612",
         "name": "Parse XML JSON",
         "func": "var data = JSON.parse(msg.payload);\nvar object1 = data.obj;\nvar integer1 = object1.int;\n\n// Parse Data\nvar power_mode = integer1[0].$.val;\nvar dark_thresh = integer1[1].$.val;\nvar light_thresh = integer1[2].$.val;\n\n\nmsg.payload = {\n            \"power_mode\": power_mode,\n            \"dark_thresh\": dark_thresh,\n            \"light_thresh\": light_thresh\n            };\n\nreturn msg;",
         "outputs": 1,
@@ -627,19 +628,19 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1030,
-        "y": 1120,
+        "x": 1050,
+        "y": 1520,
         "wires": [
             [
-                "03feb04ac8f60074",
-                "11c574af70e263da"
+                "25d230a68384f7b7",
+                "f9d9b3f6ebfe3724"
             ]
         ]
     },
     {
-        "id": "03feb04ac8f60074",
+        "id": "25d230a68384f7b7",
         "type": "debug",
-        "z": "b2f022341a33b8b3",
+        "z": "ce4f2f298caa7612",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -649,30 +650,30 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1230,
-        "y": 1120,
+        "x": 1250,
+        "y": 1520,
         "wires": []
     },
     {
-        "id": "b4159992f29961c6",
+        "id": "cd2959c925a8e99d",
         "type": "json",
-        "z": "b2f022341a33b8b3",
+        "z": "ce4f2f298caa7612",
         "name": "",
         "property": "payload",
         "action": "",
         "pretty": true,
-        "x": 830,
-        "y": 1200,
+        "x": 850,
+        "y": 1600,
         "wires": [
             [
-                "1bc31ff2f1999a13"
+                "cf33fb8145461cbe"
             ]
         ]
     },
     {
-        "id": "fd642835cc5fa593",
+        "id": "23ed623387498871",
         "type": "inject",
-        "z": "b2f022341a33b8b3",
+        "z": "ce4f2f298caa7612",
         "name": "",
         "props": [
             {
@@ -690,18 +691,18 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 180,
-        "y": 980,
+        "x": 200,
+        "y": 1380,
         "wires": [
             [
-                "264527e5bd6faf79"
+                "576fbecc01ad0c9f"
             ]
         ]
     },
     {
-        "id": "264527e5bd6faf79",
+        "id": "576fbecc01ad0c9f",
         "type": "function",
-        "z": "b2f022341a33b8b3",
+        "z": "ce4f2f298caa7612",
         "name": "Test_for_Post_Device_Command",
         "func": "// set json header\nmsg.headers = {    \n    \"Content-Type\": \"application/json\"\n    };\n    \nmsg.payload = {\n    'power_mode': 'auto',\n    'dark_thresh': 15,\n    'light_thresh': 100,\n};\n    \nreturn msg;",
         "outputs": 1,
@@ -709,18 +710,18 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 450,
-        "y": 980,
+        "x": 470,
+        "y": 1380,
         "wires": [
             [
-                "7318dbaaa30d07b1"
+                "bbef905173e8d3a9"
             ]
         ]
     },
     {
-        "id": "8e0bcd51820eb46a",
+        "id": "91dc40600b43be50",
         "type": "debug",
-        "z": "b2f022341a33b8b3",
+        "z": "ce4f2f298caa7612",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -730,14 +731,14 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1070,
-        "y": 980,
+        "x": 1090,
+        "y": 1380,
         "wires": []
     },
     {
-        "id": "21e00f1732780e54",
+        "id": "6de0daf20242dec1",
         "type": "function",
-        "z": "b2f022341a33b8b3",
+        "z": "ce4f2f298caa7612",
         "name": "Parse XML JSON",
         "func": "var data = JSON.parse(msg.payload);\n\n\nvar object1 = data.obj;\nvar integer1 = object1.int;\n\n// Parse Data\nvar power_mode = integer1[0].$.val;\nvar dark_thresh = integer1[1].$.val;\nvar light_thresh = integer1[2].$.val;\n\n\nmsg.payload = {\n            \"power_mode\": power_mode,\n            \"dark_thresh\": dark_thresh,\n            \"light_thresh\": light_thresh\n            };\n\n\nreturn msg;",
         "outputs": 1,
@@ -749,31 +750,32 @@
         "y": 860,
         "wires": [
             [
-                "7a2328aa4089f98f",
-                "21227c811da77dc4"
+                "3eab430be6182648",
+                "898505ab381b47ff",
+                "4e92aed272c41872"
             ]
         ]
     },
     {
-        "id": "7a2328aa4089f98f",
+        "id": "3eab430be6182648",
         "type": "file",
-        "z": "b2f022341a33b8b3",
+        "z": "ce4f2f298caa7612",
         "name": "",
         "filename": "/root/src/data/file_database/forward_device_command.json",
         "appendNewline": true,
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 1200,
-        "y": 900,
+        "x": 1400,
+        "y": 880,
         "wires": [
             []
         ]
     },
     {
-        "id": "21227c811da77dc4",
+        "id": "898505ab381b47ff",
         "type": "debug",
-        "z": "b2f022341a33b8b3",
+        "z": "ce4f2f298caa7612",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -788,9 +790,9 @@
         "wires": []
     },
     {
-        "id": "0bbbb97f27ae5591",
+        "id": "20e5067a16e8d3f5",
         "type": "xml",
-        "z": "b2f022341a33b8b3",
+        "z": "ce4f2f298caa7612",
         "name": "",
         "property": "payload",
         "attr": "",
@@ -799,14 +801,14 @@
         "y": 740,
         "wires": [
             [
-                "531f85d27097f7eb"
+                "268a4b96b76c5324"
             ]
         ]
     },
     {
-        "id": "531f85d27097f7eb",
+        "id": "268a4b96b76c5324",
         "type": "json",
-        "z": "b2f022341a33b8b3",
+        "z": "ce4f2f298caa7612",
         "name": "",
         "property": "payload",
         "action": "",
@@ -815,31 +817,31 @@
         "y": 740,
         "wires": [
             [
-                "21e00f1732780e54"
+                "6de0daf20242dec1"
             ]
         ]
     },
     {
-        "id": "07938a639b6681a9",
+        "id": "258dbc672779245a",
         "type": "http in",
-        "z": "b2f022341a33b8b3",
+        "z": "ce4f2f298caa7612",
         "name": "GET Forward Device Command",
         "url": "/forward_device_command",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 230,
-        "y": 1320,
+        "x": 250,
+        "y": 1720,
         "wires": [
             [
-                "6911bbb317a52500"
+                "74f505172895ac5f"
             ]
         ]
     },
     {
-        "id": "6911bbb317a52500",
+        "id": "74f505172895ac5f",
         "type": "file in",
-        "z": "b2f022341a33b8b3",
+        "z": "ce4f2f298caa7612",
         "name": "",
         "filename": "/root/src/data/file_database/forward_device_command.json",
         "format": "utf8",
@@ -847,29 +849,29 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 620,
-        "y": 1320,
+        "x": 640,
+        "y": 1720,
         "wires": [
             [
-                "94751cccd4a245a4"
+                "2b59ee3274699118"
             ]
         ]
     },
     {
-        "id": "6c652407c51f2168",
+        "id": "504173766cb1925f",
         "type": "http response",
-        "z": "b2f022341a33b8b3",
+        "z": "ce4f2f298caa7612",
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 1230,
-        "y": 1400,
+        "x": 1250,
+        "y": 1800,
         "wires": []
     },
     {
-        "id": "94751cccd4a245a4",
+        "id": "2b59ee3274699118",
         "type": "function",
-        "z": "b2f022341a33b8b3",
+        "z": "ce4f2f298caa7612",
         "name": "Parse XML JSON",
         "func": "var data = JSON.parse(msg.payload);\n\nmsg.payload = {\n            \"power_mode\": data.power_mode,\n            \"dark_thresh\": data.dark_thresh,\n            \"light_thresh\": data.light_thresh\n            };\n\n\nreturn msg;",
         "outputs": 1,
@@ -877,19 +879,19 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 990,
-        "y": 1320,
+        "x": 1010,
+        "y": 1720,
         "wires": [
             [
-                "b8ea05c67b09f7d8",
-                "6c652407c51f2168"
+                "0cac529fe19ea27e",
+                "504173766cb1925f"
             ]
         ]
     },
     {
-        "id": "b8ea05c67b09f7d8",
+        "id": "0cac529fe19ea27e",
         "type": "debug",
-        "z": "b2f022341a33b8b3",
+        "z": "ce4f2f298caa7612",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -899,8 +901,182 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1230,
-        "y": 1320,
+        "x": 1250,
+        "y": 1720,
+        "wires": []
+    },
+    {
+        "id": "225b6a096001029b",
+        "type": "file in",
+        "z": "ce4f2f298caa7612",
+        "name": "",
+        "filename": "/root/src/data/file_database/device_ip.xml",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 580,
+        "y": 960,
+        "wires": [
+            [
+                "addd71de8e2ecad9"
+            ]
+        ]
+    },
+    {
+        "id": "addd71de8e2ecad9",
+        "type": "xml",
+        "z": "ce4f2f298caa7612",
+        "name": "",
+        "property": "payload",
+        "attr": "",
+        "chr": "",
+        "x": 690,
+        "y": 1060,
+        "wires": [
+            [
+                "c89bf9c23d417936"
+            ]
+        ]
+    },
+    {
+        "id": "d7a9fe47bb47931f",
+        "type": "function",
+        "z": "ce4f2f298caa7612",
+        "name": "Parse XML JSON",
+        "func": "var data = JSON.parse(msg.payload);\nvar object1 = data.obj;\nvar integer1 = object1.int;\n\nvar tres = integer1[0];\nvar tres_$ = tres.$;\nvar device_ip = tres_$.val;\n\n\nmsg.payload = {\n            \"device_ip\":device_ip\n            };\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 950,
+        "y": 1000,
+        "wires": [
+            [
+                "4e92aed272c41872"
+            ]
+        ]
+    },
+    {
+        "id": "c89bf9c23d417936",
+        "type": "json",
+        "z": "ce4f2f298caa7612",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": true,
+        "x": 830,
+        "y": 1060,
+        "wires": [
+            [
+                "d7a9fe47bb47931f"
+            ]
+        ]
+    },
+    {
+        "id": "4e92aed272c41872",
+        "type": "join",
+        "z": "ce4f2f298caa7612",
+        "name": "",
+        "mode": "custom",
+        "build": "merged",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": true,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 1170,
+        "y": 960,
+        "wires": [
+            [
+                "882c292942fa3367"
+            ]
+        ]
+    },
+    {
+        "id": "882c292942fa3367",
+        "type": "function",
+        "z": "ce4f2f298caa7612",
+        "name": "Forward Command to Arduino Device",
+        "func": "data = msg.payload;\n\nvar power_mode = data.power_mode;\nvar dark_thresh = data.dark_thresh;\nvar light_thresh = data.light_thresh;\nvar device_ip = data.device_ip;\n\n// debug use 127.0.0.1\n//device_ip = \"127.0.0.1:1880\";\n\nhttp_request_url = \"http://\" + device_ip + \"/\" + power_mode;\n\nnode.warn(\"Send Arduino Device http request: \" + http_request_url);\n\nmsg.url = http_request_url;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1430,
+        "y": 1000,
+        "wires": [
+            [
+                "69d5c9a68a45aa6f",
+                "f9131a03b407dda7"
+            ]
+        ]
+    },
+    {
+        "id": "69d5c9a68a45aa6f",
+        "type": "http request",
+        "z": "ce4f2f298caa7612",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1640,
+        "y": 1100,
+        "wires": [
+            [
+                "bbb87ded999d40cc"
+            ]
+        ]
+    },
+    {
+        "id": "bbb87ded999d40cc",
+        "type": "debug",
+        "z": "ce4f2f298caa7612",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1830,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "f9131a03b407dda7",
+        "type": "debug",
+        "z": "ce4f2f298caa7612",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1710,
+        "y": 1000,
         "wires": []
     },
     {
@@ -912,7 +1088,7 @@
         "baseUrl": "~"
     },
     {
-        "id": "9fbb2a1664eb479b",
+        "id": "52f6cac2ced8b949",
         "type": "NM",
         "appId": "DEVICE_COMMAND_APP",
         "contactUrl": "localhost:1880"

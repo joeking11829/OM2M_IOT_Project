@@ -1,6 +1,6 @@
 [
     {
-        "id": "d761b4369cdf1108",
+        "id": "6a9fac69f8d54b14",
         "type": "tab",
         "label": "Device_Status_Flow",
         "disabled": false,
@@ -8,9 +8,9 @@
         "env": []
     },
     {
-        "id": "a2dd9f8d4e9c3de2",
+        "id": "28c12c7d25bb016f",
         "type": "inject",
-        "z": "d761b4369cdf1108",
+        "z": "6a9fac69f8d54b14",
         "name": "",
         "props": [
             {
@@ -32,16 +32,16 @@
         "y": 80,
         "wires": [
             [
-                "fc5996aeb49e46ef"
+                "8a29b9b008b5c25f"
             ]
         ]
     },
     {
-        "id": "fc5996aeb49e46ef",
+        "id": "8a29b9b008b5c25f",
         "type": "oM2M-ONE-Application",
-        "z": "d761b4369cdf1108",
+        "z": "6a9fac69f8d54b14",
         "xN_CSE": "7744e0646ab474b6",
-        "NM": "bee74264b68fada6",
+        "NM": "cb03804c94b4d2c4",
         "obixType": "",
         "obixCategory": "",
         "obixLocation": "",
@@ -50,14 +50,14 @@
         "y": 80,
         "wires": [
             [
-                "67e805e468e1991e"
+                "322f6ddc34d5e011"
             ]
         ]
     },
     {
-        "id": "67e805e468e1991e",
+        "id": "322f6ddc34d5e011",
         "type": "http request",
-        "z": "d761b4369cdf1108",
+        "z": "6a9fac69f8d54b14",
         "name": "",
         "method": "POST",
         "ret": "txt",
@@ -72,14 +72,14 @@
         "y": 80,
         "wires": [
             [
-                "059bcc5ee9672989"
+                "9e0e8e33c9ce7ee7"
             ]
         ]
     },
     {
-        "id": "059bcc5ee9672989",
+        "id": "9e0e8e33c9ce7ee7",
         "type": "debug",
-        "z": "d761b4369cdf1108",
+        "z": "6a9fac69f8d54b14",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -93,9 +93,9 @@
         "wires": []
     },
     {
-        "id": "bd54f350285c6ab6",
+        "id": "8be76e74bb78fc4b",
         "type": "inject",
-        "z": "d761b4369cdf1108",
+        "z": "6a9fac69f8d54b14",
         "name": "",
         "props": [
             {
@@ -117,14 +117,14 @@
         "y": 160,
         "wires": [
             [
-                "e70ebdda2bb64370"
+                "4c87a7db8faa9b37"
             ]
         ]
     },
     {
-        "id": "bbb106bd688a3a88",
+        "id": "bdc3d47f6c1f4bf3",
         "type": "http request",
-        "z": "d761b4369cdf1108",
+        "z": "6a9fac69f8d54b14",
         "name": "",
         "method": "POST",
         "ret": "txt",
@@ -139,14 +139,14 @@
         "y": 160,
         "wires": [
             [
-                "683d128cfd4dd8d7"
+                "dc179dc50d4087a5"
             ]
         ]
     },
     {
-        "id": "683d128cfd4dd8d7",
+        "id": "dc179dc50d4087a5",
         "type": "debug",
-        "z": "d761b4369cdf1108",
+        "z": "6a9fac69f8d54b14",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -160,25 +160,25 @@
         "wires": []
     },
     {
-        "id": "e70ebdda2bb64370",
+        "id": "4c87a7db8faa9b37",
         "type": "oM2M-ONE-Data-Container",
-        "z": "d761b4369cdf1108",
+        "z": "6a9fac69f8d54b14",
         "xN_CSE": "7744e0646ab474b6",
-        "NM": "bee74264b68fada6",
+        "NM": "cb03804c94b4d2c4",
         "maxNrOfInstances": "10",
         "obiNMnnounce": false,
         "x": 370,
         "y": 160,
         "wires": [
             [
-                "bbb106bd688a3a88"
+                "bdc3d47f6c1f4bf3"
             ]
         ]
     },
     {
-        "id": "e95bb8ca823d2f2d",
+        "id": "b9cb4929cd250da9",
         "type": "inject",
-        "z": "d761b4369cdf1108",
+        "z": "6a9fac69f8d54b14",
         "name": "",
         "props": [
             {
@@ -200,14 +200,14 @@
         "y": 240,
         "wires": [
             [
-                "865e81cfb2f105e2"
+                "bdcbf767f64e7b11"
             ]
         ]
     },
     {
-        "id": "272da3b06b347875",
+        "id": "c67a24e4c3125b69",
         "type": "http request",
-        "z": "d761b4369cdf1108",
+        "z": "6a9fac69f8d54b14",
         "name": "",
         "method": "POST",
         "ret": "txt",
@@ -222,14 +222,14 @@
         "y": 240,
         "wires": [
             [
-                "a8e0f485cc9a7a8c"
+                "6c0855b75cfd9fda"
             ]
         ]
     },
     {
-        "id": "a8e0f485cc9a7a8c",
+        "id": "6c0855b75cfd9fda",
         "type": "debug",
-        "z": "d761b4369cdf1108",
+        "z": "6a9fac69f8d54b14",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -243,11 +243,11 @@
         "wires": []
     },
     {
-        "id": "865e81cfb2f105e2",
+        "id": "bdcbf767f64e7b11",
         "type": "function",
-        "z": "d761b4369cdf1108",
+        "z": "6a9fac69f8d54b14",
         "name": "Create_DeviceStatus_TestData",
-        "func": "msg.headers = {\n        \"X-M2M-Origin\": \"admin:admin\",\n        \"Content-type\" : \"application/xml;ty=4\"\n};\n\n// Set Test Data\nvar PIR = 69;\nvar ADC33 = 910;\n\nmsg.payload = \"\\\n<m2m:cin xmlns:m2m=\\\"http://www.onem2m.org/xml/protocols\\\">\\\n    <cnf>message</cnf>\\\n    <con>\\\n      &lt;obj&gt;\\\n        &lt;str name=&quot;appId&quot; val=&quot;DEVICE_STATUS_APP&quot;/&gt;\\\n        &lt;int name=&quot;PIR&quot; val=&quot;\" + PIR + \"&quot;/&gt;\\\n        &lt;int name=&quot;ADC33&quot; val=&quot;\" + ADC33 + \"&quot;/&gt;\\\n      &lt;/obj&gt;\\\n    </con>\\\n</m2m:cin>\";\n\n\nreturn msg;",
+        "func": "msg.headers = {\n        \"X-M2M-Origin\": \"admin:admin\",\n        \"Content-type\" : \"application/xml;ty=4\"\n};\n\nvar m = new Date();\nvar dateString =\n    m.getUTCFullYear() + \"/\" +\n    (\"0\" + (m.getUTCMonth()+1)).slice(-2) + \"/\" +\n    (\"0\" + m.getUTCDate()).slice(-2) + \" \" +\n    (\"0\" + m.getUTCHours()).slice(-2) + \":\" +\n    (\"0\" + m.getUTCMinutes()).slice(-2) + \":\" +\n    (\"0\" + m.getUTCSeconds()).slice(-2);\n\n// Set Test Data\nvar PIR = 54;\nvar ADC33 = 880;\n\nmsg.payload = \"\\\n<m2m:cin xmlns:m2m=\\\"http://www.onem2m.org/xml/protocols\\\">\\\n    <cnf>message</cnf>\\\n    <con>\\\n      &lt;obj&gt;\\\n        &lt;str name=&quot;appId&quot; val=&quot;DEVICE_STATUS_APP&quot;/&gt;\\\n        &lt;int name=&quot;TIMESTAMP&quot; val=&quot;\" + dateString + \"&quot;/&gt;\\\n        &lt;int name=&quot;PIR&quot; val=&quot;\" + PIR + \"&quot;/&gt;\\\n        &lt;int name=&quot;ADC33&quot; val=&quot;\" + ADC33 + \"&quot;/&gt;\\\n      &lt;/obj&gt;\\\n    </con>\\\n</m2m:cin>\";\n\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -257,14 +257,14 @@
         "y": 240,
         "wires": [
             [
-                "272da3b06b347875"
+                "c67a24e4c3125b69"
             ]
         ]
     },
     {
-        "id": "2d69dd748d161909",
+        "id": "45ead40dea45ed0b",
         "type": "inject",
-        "z": "d761b4369cdf1108",
+        "z": "6a9fac69f8d54b14",
         "name": "",
         "props": [
             {
@@ -286,16 +286,16 @@
         "y": 500,
         "wires": [
             [
-                "4f3c763e564f0a52"
+                "4edeac69ced542d2"
             ]
         ]
     },
     {
-        "id": "4f3c763e564f0a52",
+        "id": "4edeac69ced542d2",
         "type": "oM2M-ONE-Subscription",
-        "z": "d761b4369cdf1108",
+        "z": "6a9fac69f8d54b14",
         "xN_CSE": "7744e0646ab474b6",
-        "NM": "bee74264b68fada6",
+        "NM": "cb03804c94b4d2c4",
         "contactPath": "http://localhost:1880/notification_device_status",
         "CNT": "DATA",
         "filterType": "",
@@ -304,14 +304,14 @@
         "y": 500,
         "wires": [
             [
-                "cbbaf801e7227fd2"
+                "b81f35dbff7cd05a"
             ]
         ]
     },
     {
-        "id": "cbbaf801e7227fd2",
+        "id": "b81f35dbff7cd05a",
         "type": "http request",
-        "z": "d761b4369cdf1108",
+        "z": "6a9fac69f8d54b14",
         "name": "",
         "method": "POST",
         "ret": "txt",
@@ -326,14 +326,14 @@
         "y": 500,
         "wires": [
             [
-                "7e0c9d872e0f91f6"
+                "fb3a9cbbd4e67a8c"
             ]
         ]
     },
     {
-        "id": "7e0c9d872e0f91f6",
+        "id": "fb3a9cbbd4e67a8c",
         "type": "debug",
-        "z": "d761b4369cdf1108",
+        "z": "6a9fac69f8d54b14",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -347,9 +347,9 @@
         "wires": []
     },
     {
-        "id": "3d3263f562cf663c",
+        "id": "3b4d84bbf0904b98",
         "type": "http in",
-        "z": "d761b4369cdf1108",
+        "z": "6a9fac69f8d54b14",
         "name": "Listen to HTTP POST Notifications of Device Status",
         "url": "/notification_device_status",
         "method": "post",
@@ -359,15 +359,15 @@
         "y": 580,
         "wires": [
             [
-                "bf11ca06ee9111cd",
-                "0e14dfe01e05f3d4"
+                "631d6b30d7c0984c",
+                "a05c842a38e00bc3"
             ]
         ]
     },
     {
-        "id": "0e14dfe01e05f3d4",
+        "id": "a05c842a38e00bc3",
         "type": "http response",
-        "z": "d761b4369cdf1108",
+        "z": "6a9fac69f8d54b14",
         "name": "Notification Device Status Reponse",
         "statusCode": "",
         "headers": {},
@@ -376,9 +376,9 @@
         "wires": []
     },
     {
-        "id": "bf11ca06ee9111cd",
+        "id": "631d6b30d7c0984c",
         "type": "xml",
-        "z": "d761b4369cdf1108",
+        "z": "6a9fac69f8d54b14",
         "name": "",
         "property": "payload",
         "attr": "",
@@ -387,16 +387,16 @@
         "y": 580,
         "wires": [
             [
-                "1f4777bd80b52a40"
+                "0816f1407039a5b8"
             ]
         ]
     },
     {
-        "id": "1f4777bd80b52a40",
+        "id": "0816f1407039a5b8",
         "type": "function",
-        "z": "d761b4369cdf1108",
+        "z": "6a9fac69f8d54b14",
         "name": "Extract_Data_from_XML",
-        "func": "var notification = msg.payload['m2m:sgn'];\n\nvar nev = notification['nev'][0];\n\nvar rep = nev['rep'][0];\n\nvar con = rep['con'][0];\n\nmsg.payload = con;\n\nreturn msg;",
+        "func": "var notification = msg.payload['m2m:sgn'];\n\nvar nev = notification['nev'][0];\n\nvar rep = nev['rep'][0];\n\nvar con = rep['con'][0];\n\nmsg.payload = con;\n\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -406,15 +406,15 @@
         "y": 580,
         "wires": [
             [
-                "9ae7f769951a2f2e",
-                "a97cbf6ebaa7955a"
+                "400851f663637e55",
+                "4aa4f099e11e4581"
             ]
         ]
     },
     {
-        "id": "9ae7f769951a2f2e",
+        "id": "400851f663637e55",
         "type": "debug",
-        "z": "d761b4369cdf1108",
+        "z": "6a9fac69f8d54b14",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -429,88 +429,79 @@
         "wires": []
     },
     {
-        "id": "a97cbf6ebaa7955a",
+        "id": "4aa4f099e11e4581",
         "type": "file",
-        "z": "d761b4369cdf1108",
+        "z": "6a9fac69f8d54b14",
         "name": "",
         "filename": "/root/src/data/file_database/device_status.xml",
         "appendNewline": true,
         "createDir": true,
-        "overwriteFile": "true",
+        "overwriteFile": "false",
         "encoding": "none",
-        "x": 1080,
-        "y": 660,
+        "x": 820,
+        "y": 680,
         "wires": [
-            []
+            [
+                "e24f9a0283c72d5b"
+            ]
         ]
     },
     {
-        "id": "2b7eae2a8524706a",
+        "id": "15c7568863aab174",
         "type": "http in",
-        "z": "d761b4369cdf1108",
-        "name": "GET Device Status",
-        "url": "/device_status",
+        "z": "6a9fac69f8d54b14",
+        "name": "GET Device Logs",
+        "url": "/device_logs",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 190,
-        "y": 800,
+        "x": 80,
+        "y": 1400,
         "wires": [
             [
-                "4d22a8dbc0152208"
+                "3288a23cce3e6fc3"
             ]
         ]
     },
     {
-        "id": "4d22a8dbc0152208",
+        "id": "3288a23cce3e6fc3",
         "type": "file in",
-        "z": "d761b4369cdf1108",
+        "z": "6a9fac69f8d54b14",
         "name": "",
         "filename": "/root/src/data/file_database/device_status.xml",
-        "format": "utf8",
+        "format": "lines",
         "chunk": false,
         "sendError": false,
-        "encoding": "none",
-        "allProps": false,
-        "x": 480,
-        "y": 800,
+        "encoding": "utf8",
+        "allProps": true,
+        "x": 440,
+        "y": 1400,
         "wires": [
             [
-                "e54bde1ea79b0ac6"
+                "81e3648e2ed12884"
             ]
         ]
     },
     {
-        "id": "e54bde1ea79b0ac6",
+        "id": "81e3648e2ed12884",
         "type": "xml",
-        "z": "d761b4369cdf1108",
+        "z": "6a9fac69f8d54b14",
         "name": "",
         "property": "payload",
         "attr": "",
         "chr": "",
-        "x": 590,
-        "y": 880,
+        "x": 330,
+        "y": 1480,
         "wires": [
             [
-                "1e8d99bbafdd1ff8"
+                "4b0e66fac99ce664"
             ]
         ]
     },
     {
-        "id": "866231fd7343877a",
-        "type": "http response",
-        "z": "d761b4369cdf1108",
-        "name": "",
-        "statusCode": "",
-        "headers": {},
-        "x": 1110,
-        "y": 880,
-        "wires": []
-    },
-    {
-        "id": "1666415cc6aad835",
+        "id": "b77e66f1ee1c79e9",
         "type": "http in",
-        "z": "d761b4369cdf1108",
+        "z": "6a9fac69f8d54b14",
         "name": "Post Device Status",
         "url": "/device_status",
         "method": "post",
@@ -520,15 +511,15 @@
         "y": 340,
         "wires": [
             [
-                "39e490ad02349eeb",
-                "fe06df2b14ca6492"
+                "e04ea791410ed421",
+                "34721014a08f5375"
             ]
         ]
     },
     {
-        "id": "39e490ad02349eeb",
+        "id": "e04ea791410ed421",
         "type": "http response",
-        "z": "d761b4369cdf1108",
+        "z": "6a9fac69f8d54b14",
         "name": "Response",
         "statusCode": "",
         "headers": {},
@@ -537,11 +528,11 @@
         "wires": []
     },
     {
-        "id": "fe06df2b14ca6492",
+        "id": "34721014a08f5375",
         "type": "function",
-        "z": "d761b4369cdf1108",
+        "z": "6a9fac69f8d54b14",
         "name": "Create_DeviceStatus_Data",
-        "func": "msg.headers = {\n        \"X-M2M-Origin\": \"admin:admin\",\n        \"Content-type\" : \"application/xml;ty=4\"\n};\n\n\nmsg.payload = \"\\\n<m2m:cin xmlns:m2m=\\\"http://www.onem2m.org/xml/protocols\\\">\\\n    <cnf>message</cnf>\\\n    <con>\\\n      &lt;obj&gt;\\\n        &lt;str name=&quot;appId&quot; val=&quot;DEVICE_STATUS_APP&quot;/&gt;\\\n        &lt;int name=&quot;PIR&quot; val=&quot;\" + msg.payload.pir + \"&quot;/&gt;\\\n        &lt;int name=&quot;ADC33&quot; val=&quot;\" + msg.payload.adc33 + \"&quot;/&gt;\\\n      &lt;/obj&gt;\\\n    </con>\\\n</m2m:cin>\";\n\n\nreturn msg;",
+        "func": "msg.headers = {\n        \"X-M2M-Origin\": \"admin:admin\",\n        \"Content-type\" : \"application/xml;ty=4\"\n};\n\n\nvar m = new Date();\nvar dateString =\n    m.getUTCFullYear() + \"/\" +\n    (\"0\" + (m.getUTCMonth()+1)).slice(-2) + \"/\" +\n    (\"0\" + m.getUTCDate()).slice(-2) + \" \" +\n    (\"0\" + m.getUTCHours()).slice(-2) + \":\" +\n    (\"0\" + m.getUTCMinutes()).slice(-2) + \":\" +\n    (\"0\" + m.getUTCSeconds()).slice(-2);\n\nmsg.payload = \"\\\n<m2m:cin xmlns:m2m=\\\"http://www.onem2m.org/xml/protocols\\\">\\\n    <cnf>message</cnf>\\\n    <con>\\\n      &lt;obj&gt;\\\n        &lt;str name=&quot;appId&quot; val=&quot;DEVICE_STATUS_APP&quot;/&gt;\\\n        &lt;int name=&quot;TIMESTAMP&quot; val=&quot;\" + dateString + \"&quot;/&gt;\\\n        &lt;int name=&quot;PIR&quot; val=&quot;\" + msg.payload.pir + \"&quot;/&gt;\\\n        &lt;int name=&quot;ADC33&quot; val=&quot;\" + msg.payload.adc33 + \"&quot;/&gt;\\\n      &lt;/obj&gt;\\\n    </con>\\\n</m2m:cin>\";\n\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -551,14 +542,14 @@
         "y": 340,
         "wires": [
             [
-                "03cb7be4607d7b6b"
+                "ce39fa32130b21e5"
             ]
         ]
     },
     {
-        "id": "03cb7be4607d7b6b",
+        "id": "ce39fa32130b21e5",
         "type": "http request",
-        "z": "d761b4369cdf1108",
+        "z": "6a9fac69f8d54b14",
         "name": "",
         "method": "POST",
         "ret": "txt",
@@ -573,14 +564,14 @@
         "y": 340,
         "wires": [
             [
-                "20081ba25bca69a2"
+                "6244c1c7a53920f9"
             ]
         ]
     },
     {
-        "id": "20081ba25bca69a2",
+        "id": "6244c1c7a53920f9",
         "type": "debug",
-        "z": "d761b4369cdf1108",
+        "z": "6a9fac69f8d54b14",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -594,9 +585,9 @@
         "wires": []
     },
     {
-        "id": "f2113965c3462d16",
+        "id": "e77f2fbf878aa2e5",
         "type": "http request",
-        "z": "d761b4369cdf1108",
+        "z": "6a9fac69f8d54b14",
         "name": "Post to /device_status",
         "method": "POST",
         "ret": "obj",
@@ -607,71 +598,53 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 780,
-        "y": 980,
+        "x": 760,
+        "y": 1760,
         "wires": [
             [
-                "197d4e10d881818d"
+                "56e204e0ce94cd19"
             ]
         ]
     },
     {
-        "id": "1054024a6dc4972d",
+        "id": "f4ba0e3c4f78972c",
         "type": "function",
-        "z": "d761b4369cdf1108",
-        "name": "Parse XML JSON",
-        "func": "var data = JSON.parse(msg.payload);\nvar object1 = data.obj;\nvar integer1 = object1.int;\n\n// Parse Data\nvar pir = integer1[0].$.val;\nvar adc33 = integer1[1].$.val;\n\n\nmsg.payload = {\n            \"pir\": pir,\n            \"adc33\": adc33\n            };\n\nreturn msg;",
+        "z": "6a9fac69f8d54b14",
+        "name": "Parse Single Recode from XML to JSON",
+        "func": "// Check if null == payload\nif(msg.payload === \"null\")\n{\n    node.warn('the end of message seq');\n    msg.complete = true;\n    \n}else{\n    var data = JSON.parse(msg.payload);\n    var object1 = data.obj;\n    var integer1 = object1.int;\n\n    // Parse Data\n    var timestamp = integer1[0].$.val;\n    var pir = integer1[1].$.val;\n    var adc33 = integer1[2].$.val;\n\n\n    msg.payload = {\n                \"timestamp\": timestamp,\n                \"pir\": pir,\n                \"adc33\": adc33\n                };\n    \n}\n\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 930,
-        "y": 800,
+        "x": 880,
+        "y": 1420,
         "wires": [
             [
-                "7a1c0d813edcafb3",
-                "866231fd7343877a"
+                "7748e5bbd91a8173"
             ]
         ]
     },
     {
-        "id": "7a1c0d813edcafb3",
-        "type": "debug",
-        "z": "d761b4369cdf1108",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1130,
-        "y": 800,
-        "wires": []
-    },
-    {
-        "id": "1e8d99bbafdd1ff8",
+        "id": "4b0e66fac99ce664",
         "type": "json",
-        "z": "d761b4369cdf1108",
+        "z": "6a9fac69f8d54b14",
         "name": "",
         "property": "payload",
         "action": "",
         "pretty": true,
-        "x": 730,
-        "y": 880,
+        "x": 490,
+        "y": 1480,
         "wires": [
             [
-                "1054024a6dc4972d"
+                "f4ba0e3c4f78972c"
             ]
         ]
     },
     {
-        "id": "8bec2399caf726bc",
+        "id": "65d97a2c5c612a08",
         "type": "inject",
-        "z": "d761b4369cdf1108",
+        "z": "6a9fac69f8d54b14",
         "name": "",
         "props": [
             {
@@ -689,37 +662,37 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 180,
-        "y": 980,
+        "x": 160,
+        "y": 1760,
         "wires": [
             [
-                "12820acafde08e44"
+                "0589c1e110a0fd90"
             ]
         ]
     },
     {
-        "id": "12820acafde08e44",
+        "id": "0589c1e110a0fd90",
         "type": "function",
-        "z": "d761b4369cdf1108",
+        "z": "6a9fac69f8d54b14",
         "name": "Test_for_Post_Device_Status",
-        "func": "// set json header\nmsg.headers = {    \n    \"Content-Type\": \"application/json\"\n    };\n    \nmsg.payload = {\n    'pir': 90,\n    'adc33': 560\n};\n    \nreturn msg;",
+        "func": "// set json header\nmsg.headers = {    \n    \"Content-Type\": \"application/json\"\n    };\n    \nmsg.payload = {\n    'pir': 55,\n    'adc33': 359\n};\n    \nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 440,
-        "y": 980,
+        "x": 420,
+        "y": 1760,
         "wires": [
             [
-                "f2113965c3462d16"
+                "e77f2fbf878aa2e5"
             ]
         ]
     },
     {
-        "id": "197d4e10d881818d",
+        "id": "56e204e0ce94cd19",
         "type": "debug",
-        "z": "d761b4369cdf1108",
+        "z": "6a9fac69f8d54b14",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -728,8 +701,363 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1070,
-        "y": 980,
+        "x": 1050,
+        "y": 1760,
+        "wires": []
+    },
+    {
+        "id": "7748e5bbd91a8173",
+        "type": "join",
+        "z": "6a9fac69f8d54b14",
+        "name": "",
+        "mode": "custom",
+        "build": "array",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 750,
+        "y": 1500,
+        "wires": [
+            [
+                "35f0de541ca767b8"
+            ]
+        ]
+    },
+    {
+        "id": "f59edfe6db6b7a20",
+        "type": "debug",
+        "z": "6a9fac69f8d54b14",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1170,
+        "y": 1620,
+        "wires": []
+    },
+    {
+        "id": "35f0de541ca767b8",
+        "type": "function",
+        "z": "6a9fac69f8d54b14",
+        "name": "Handle Array Messages",
+        "func": "var payload = msg.payload;\n\n// remove null object\ndata = [];\nfor(var raw_data in payload){\n    if(payload[raw_data] != \"null\"){\n        data.push(payload[raw_data]);\n    }\n}\n\n\nmsg.payload = { \"device_status\": (data) };\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 990,
+        "y": 1540,
+        "wires": [
+            [
+                "f59edfe6db6b7a20",
+                "4b7d510f18e46ac4"
+            ]
+        ]
+    },
+    {
+        "id": "4b7d510f18e46ac4",
+        "type": "http response",
+        "z": "6a9fac69f8d54b14",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1240,
+        "y": 1500,
+        "wires": []
+    },
+    {
+        "id": "e24f9a0283c72d5b",
+        "type": "file in",
+        "z": "6a9fac69f8d54b14",
+        "name": "",
+        "filename": "/root/src/data/file_database/device_status.xml",
+        "format": "lines",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "utf8",
+        "allProps": true,
+        "x": 420,
+        "y": 780,
+        "wires": [
+            [
+                "b498c6032365b0d4"
+            ]
+        ]
+    },
+    {
+        "id": "9fb55cf28f3200d6",
+        "type": "join",
+        "z": "6a9fac69f8d54b14",
+        "name": "",
+        "mode": "custom",
+        "build": "array",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 870,
+        "y": 780,
+        "wires": [
+            [
+                "c99d4cf68d9a0c94"
+            ]
+        ]
+    },
+    {
+        "id": "b498c6032365b0d4",
+        "type": "xml",
+        "z": "6a9fac69f8d54b14",
+        "name": "",
+        "property": "payload",
+        "attr": "",
+        "chr": "",
+        "x": 710,
+        "y": 780,
+        "wires": [
+            [
+                "9fb55cf28f3200d6"
+            ]
+        ]
+    },
+    {
+        "id": "c99d4cf68d9a0c94",
+        "type": "function",
+        "z": "6a9fac69f8d54b14",
+        "name": "Parse Multiple XML record",
+        "func": "var data = msg.payload;\n\ndata_array = [];\nxml_array = [];\n\nfor (var index in data){\n    if(data[index] != null){\n        var _data = data[index].obj;\n        \n        // parse appid\n        var obj_name = _data.str[0].$.name;\n        var obj_val = _data.str[0].$.val;\n        \n        // parse obj\n        var timestamp_name = _data.int[0].$.name;\n        var timestamp_val = _data.int[0].$.val;\n        \n        var pir_name = _data.int[1].$.name;\n        var pir_val = _data.int[1].$.val;\n        \n        var adc33_name = _data.int[2].$.name;\n        var adc33_val = _data.int[2].$.val;\n        \n        \n        data_obj = {};\n        data_obj[obj_name] = obj_val;\n        data_obj[timestamp_name] = timestamp_val;\n        data_obj[pir_name] = pir_val;\n        data_obj[adc33_name] = adc33_val;\n        data_array.push(data_obj);\n        \n        var xml_string = '     <obj>      <str name=\"'+obj_name+'\" val=\"'+obj_val+'\"/>        <int name=\"'+timestamp_name+'\" val=\"'+timestamp_val+'\"/>        <int name=\"'+pir_name+'\" val=\"'+pir_val+'\"/>        <int name=\"'+adc33_name+'\" val=\"'+adc33_val+'\"/>      </obj>    ';\n        xml_array.push(xml_string);\n    }\n}\n\nnode.warn(xml_array);\n\nwhile( xml_array.length > 5){\n    //remove the first record\n     xml_array.shift();\n}\n\nnode.warn('After remove process');\nnode.warn(xml_array);\n\n// create final xml\nvar final_xml_string = \"\";\n\nfor( var xml_obj in xml_array){\n    final_xml_string += (xml_array[xml_obj] + \"\\n\");\n}\n\nnode.warn('Final XML String');\nnode.warn(final_xml_string);\n\nmsg.payload = final_xml_string;\n    \n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1100,
+        "y": 780,
+        "wires": [
+            [
+                "4f8736589cf0d869",
+                "7f61d87381c8855b"
+            ]
+        ]
+    },
+    {
+        "id": "4f8736589cf0d869",
+        "type": "debug",
+        "z": "6a9fac69f8d54b14",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1330,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "7f61d87381c8855b",
+        "type": "file",
+        "z": "6a9fac69f8d54b14",
+        "name": "",
+        "filename": "/root/src/data/file_database/device_status.xml",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1420,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "90eff83f651b9768",
+        "type": "http in",
+        "z": "6a9fac69f8d54b14",
+        "name": "GET Device Status",
+        "url": "/device_status",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 110,
+        "y": 1100,
+        "wires": [
+            [
+                "63c9b722308fa2fc"
+            ]
+        ]
+    },
+    {
+        "id": "63c9b722308fa2fc",
+        "type": "file in",
+        "z": "6a9fac69f8d54b14",
+        "name": "",
+        "filename": "/root/src/data/file_database/device_status.xml",
+        "format": "lines",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "utf8",
+        "allProps": true,
+        "x": 440,
+        "y": 1100,
+        "wires": [
+            [
+                "ec5281cfcd20f177"
+            ]
+        ]
+    },
+    {
+        "id": "ec5281cfcd20f177",
+        "type": "xml",
+        "z": "6a9fac69f8d54b14",
+        "name": "",
+        "property": "payload",
+        "attr": "",
+        "chr": "",
+        "x": 330,
+        "y": 1180,
+        "wires": [
+            [
+                "7f39ef2af3c413f2"
+            ]
+        ]
+    },
+    {
+        "id": "122667760edb2018",
+        "type": "function",
+        "z": "6a9fac69f8d54b14",
+        "name": "Parse Single Recode from XML to JSON",
+        "func": "// Check if null == payload\nif(msg.payload === \"null\")\n{\n    node.warn('the end of message seq');\n    msg.complete = true;\n    \n}else{\n    var data = JSON.parse(msg.payload);\n    var object1 = data.obj;\n    var integer1 = object1.int;\n\n    // Parse Data\n    var timestamp = integer1[0].$.val;\n    var pir = integer1[1].$.val;\n    var adc33 = integer1[2].$.val;\n\n\n    msg.payload = {\n                \"timestamp\": timestamp,\n                \"pir\": pir,\n                \"adc33\": adc33\n                };\n    \n}\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 1120,
+        "wires": [
+            [
+                "34463990b7277ad8"
+            ]
+        ]
+    },
+    {
+        "id": "7f39ef2af3c413f2",
+        "type": "json",
+        "z": "6a9fac69f8d54b14",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": true,
+        "x": 490,
+        "y": 1180,
+        "wires": [
+            [
+                "122667760edb2018"
+            ]
+        ]
+    },
+    {
+        "id": "34463990b7277ad8",
+        "type": "join",
+        "z": "6a9fac69f8d54b14",
+        "name": "",
+        "mode": "custom",
+        "build": "array",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 750,
+        "y": 1200,
+        "wires": [
+            [
+                "047094592de55c55"
+            ]
+        ]
+    },
+    {
+        "id": "f4f28ece44947cd4",
+        "type": "debug",
+        "z": "6a9fac69f8d54b14",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1170,
+        "y": 1320,
+        "wires": []
+    },
+    {
+        "id": "047094592de55c55",
+        "type": "function",
+        "z": "6a9fac69f8d54b14",
+        "name": "Handle Array Messages",
+        "func": "var payload = msg.payload;\n\n// remove null object\ndata_array = [];\nfor(var raw_data in payload){\n    if(payload[raw_data] != \"null\"){\n        data_array.push(payload[raw_data]);\n    }\n}\n\nvar data = data_array.pop()\n\nmsg.payload = {\n                \"timestamp\": data.timestamp,\n                \"pir\": data.pir,\n                \"adc33\": data.adc33\n            };\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 990,
+        "y": 1240,
+        "wires": [
+            [
+                "f4f28ece44947cd4",
+                "b5bd14e4fc42d7fa"
+            ]
+        ]
+    },
+    {
+        "id": "b5bd14e4fc42d7fa",
+        "type": "http response",
+        "z": "6a9fac69f8d54b14",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1240,
+        "y": 1200,
         "wires": []
     },
     {
@@ -741,7 +1069,7 @@
         "baseUrl": "~"
     },
     {
-        "id": "bee74264b68fada6",
+        "id": "cb03804c94b4d2c4",
         "type": "NM",
         "appId": "DEVICE_STATUS_APP",
         "contactUrl": "localhost:1880"
